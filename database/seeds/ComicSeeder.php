@@ -12,9 +12,9 @@ class ComicSeeder extends Seeder
      */
     public function run()
     {
-        $comicList = config('comics');
+        $comicsList = config('comics');
 
-        foreach ($comicList as $comics) {
+        foreach ($comicsList as $comics) {
 
             $newComic = new Comic();
             $newComic->title = $comics['title'];
