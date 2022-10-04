@@ -30,7 +30,17 @@
                             <a class="btn btn-primary" href="{{ route('comics.show', ['comic' => $comic->id]) }}">Mostra dettagli</a>
                         </td>
                         <td>
-                            <a class="btn btn-primary" href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Modifica</a>
+                            <a class="btn btn-warning" href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Modifica</a>
+                        </td>
+                        <td>
+                            <form action="{{ route('comics.destroy', compact('comic')) }}" method="post">
+
+                                @csrf
+                                @method('DELETE')
+
+                                <button class="btn btn-danger" type="submit">Elimina</button>
+
+                            </form>
                         </td>
                     </tr>
                 @endforeach
