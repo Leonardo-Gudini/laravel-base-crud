@@ -7,7 +7,7 @@
             @csrf
             <div class="form-group">
               <label for="title">Titolo</label>
-              <input type="text" class="form-control" id="title">
+              <input type="text" class="form-control" id="title" name="title"/>
             </div>
             <div class="form-group">
               <label for="description">Descrizione</label>
@@ -15,23 +15,23 @@
             </div>
             <div class="form-group">
               <label for="thumb">thumb</label>
-              <input type="text" class="form-control" id="thumb" >
+              <input type="text" class="form-control" id="thumb" name="thumb"/>
             </div>
             <div class="form-group">
               <label for="price">Prezzo</label>
-              <input type="text" class="form-control" id="price" >
+              <input type="text" class="form-control" id="price" name="price"/>
             </div>
             <div class="form-group">
               <label for="series">Serie</label>
-              <input type="text" class="form-control" id="series" >
+              <input type="text" class="form-control" id="series" name="series"/>
             </div>
             <div class="form-group">
               <label for="sale_date">Data Rilascio</label>
-              <input type="text" class="form-control" id="sale_date" >
+              <input type="text" class="form-control" id="sale_date" name="sale_date"/>
             </div>
             <div class="form-group">
               <label for="type">Tipologia</label>
-              <input type="text" class="form-control" id="type" >
+              <input type="text" class="form-control" id="type" name="type"/>
             </div>
             <button type="submit" class="btn btn-success">Aggiungi Nuovo Fumetto</button>
           </form>

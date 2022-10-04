@@ -29,6 +29,9 @@
                         <td>
                             <a class="btn btn-primary" href="{{ route('comics.show', ['comic' => $comic->id]) }}">Mostra dettagli</a>
                         </td>
+                        <td>
+                            <a class="btn btn-primary" href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Modifica</a>
+                        </td>
                     </tr>
                 @endforeach
               </tbody>
