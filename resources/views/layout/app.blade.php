@@ -9,9 +9,13 @@
 </head>
 <body>
 
-    <h1>Comics</h1>
+    <h1>
+        <a href="/">Comics</a>
+    </h1>
 
-    <a href="/comics">Lista Fumetti</a>
+    <a class="btn btn-success" href="{{ route('comics.create') }}">Aggiungi Fumetto</a>
+
+
 
 
     <main>
