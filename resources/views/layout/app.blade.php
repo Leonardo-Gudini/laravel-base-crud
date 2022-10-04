@@ -11,7 +11,6 @@
 
     <h1>Comics</h1>
 
-    <a href="/">Home</a>
     <a href="/comics">Lista Fumetti</a>
 
 
