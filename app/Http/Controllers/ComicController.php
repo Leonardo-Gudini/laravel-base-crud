@@ -42,9 +42,9 @@ class ComicController extends Controller
                 'title'=>'required|max:60|min:5',
                 'description'=>'required|max:35565|min:10',
                 'thumb'=>'required|max:254|url',
-                'price'=>'required|min:4|numeric',
+                'price'=>'required|numeric|',
                 'series'=>'required|max:50|min:5',
-                'sale_date'=>'required|max:20|date_format:Y/m/d',
+                'sale_date'=>'required|max:20|date_format:Y-m-d',
                 'type'=>'required|max:20|min:5',
             ]
             );
@@ -94,6 +94,18 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comics)
     {
+
+        $request->validate(
+            [
+                'title'=>'required|max:60|min:5',
+                'description'=>'required|max:35565|min:10',
+                'thumb'=>'required|max:254|url',
+                'price'=>'required|numeric',
+                'series'=>'required|max:50|min:5',
+                'sale_date'=>'required|max:20|date_format:Y-m-d',
+                'type'=>'required|max:20|min:5',
+            ]
+            );
 
         if ($comics) {
             $data=$request->all();
