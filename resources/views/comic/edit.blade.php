@@ -5,7 +5,7 @@
 <div class="container">
     <form action="{{ route('comics.update', ['comic' => $comics->id]) }}" method="POST">
         @csrf
-        @method('PATCH')
+        @method('PUT')
         <div class="form-group">
           <label for="title">Titolo</label>
           <input type="text" class="form-control" id="title" name="title" value="{{ $comics->title }}"/>
@@ -34,7 +34,7 @@
           <label for="type">Tipologia</label>
           <input type="text" class="form-control" id="type" name="type" value="{{ $comics->type }}"/>
         </div>
-        <button type="submit" class="btn btn-success">Aggiungi Nuovo Fumetto</button>
+        <button type="submit" class="btn btn-success">Salva Modifiche</button>
       </form>
 </div>
 
