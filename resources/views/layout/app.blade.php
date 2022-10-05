@@ -20,7 +20,7 @@
 
     <main>
 
-        <div class="container" class="my-3">
+        {{-- <div class="container" class="my-3">
 
             @if ($errors->any())
                 <div class="alert alert-danger">
@@ -34,7 +34,7 @@
 
 
 
-        </div>
+        </div> --}}
 
 
         @yield('content')
